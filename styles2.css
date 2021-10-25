@@ -1,0 +1,116 @@
+.background{
+    position: relative;
+    bottom:10vh;
+    width: 20vh;
+    height: 20vh;
+    background-color: brown;
+    border-radius: 10px;
+    z-index: -300;
+
+
+    color: white;
+    font-size: 5rem;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-text{
+    position: relative;
+    top: 5vh;
+    overflow: clip;
+}
+
+/* .time-box{
+    position: relative;
+    bottom: 20vh;
+    width: 20vh;
+    height: 20vh;
+    background-color: green;
+    border-radius: 10px;
+    color: black;
+    font-size: 5rem;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.panel{
+    position: relative;
+    width: 19.5vh;
+    height: 9.75vh;
+    background-color: brown;
+    z-index: 80;
+}
+
+.top-panel{
+    position: relative;
+    /* bottom: 20vh; */
+    /* padding-top: 5vh; */
+    /* line-height: 10vh; */
+    width: 20vh;
+    height: 10vh;
+    background-color: green;
+    /* border-radius: 10px; */
+    color: black;
+    font-size: 5rem;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border: 1px solid black; */
+    /* top:20vh; */
+    
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+}
+
+
+.cutout{
+    position: relative;
+    width:1vh;
+    height:2vh;
+    /* border-radius: 1vh; */
+    background-color: black;
+    z-index: 100;
+}
+
+.cutout1{
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    top: 13vh;
+}
+
+.cutout2{
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+    top:11vh;
+    left:19vh;
+}
+
+
+
+@keyframes arrow {
+    0% {
+      transform-origin: bottom;
+      transform: rotateX(0deg);
+    }
+    100% {
+        transform-origin: bottom;
+      transform: rotateX(90deg);
+    }
+    /* 100% {
+        transform-origin: bottom;
+      transform: rotateX(0deg);
+    } */
+  }
